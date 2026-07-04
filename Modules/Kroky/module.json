@@ -1,0 +1,11 @@
+{
+    "name": "Kroky",
+    "alias": "kroky",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Kroky\\Providers\\KrokyServiceProvider"
+    ],
+    "files": []
+}

@@ -1,3 +1,11 @@
 {
-    "Core": true
+    "Core": true,
+    "Fleet": true,
+    "Operations": true,
+    "CarLog": true,
+    "Kroky": true,
+    "Maintenance": true,
+    "HR": true,
+    "Audit": true,
+    "Notification": true
 }

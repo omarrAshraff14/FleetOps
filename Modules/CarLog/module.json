@@ -1,0 +1,11 @@
+{
+    "name": "CarLog",
+    "alias": "carlog",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\CarLog\\Providers\\CarLogServiceProvider"
+    ],
+    "files": []
+}

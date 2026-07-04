@@ -1,0 +1,30 @@
+{
+    "name": "nwidart/kroky",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Kroky\\": "app/",
+            "Modules\\Kroky\\Database\\Factories\\": "database/factories/",
+            "Modules\\Kroky\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Kroky\\Tests\\": "tests/"
+        }
+    }
+}

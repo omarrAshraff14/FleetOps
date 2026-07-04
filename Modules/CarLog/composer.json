@@ -1,0 +1,30 @@
+{
+    "name": "nwidart/carlog",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\CarLog\\": "app/",
+            "Modules\\CarLog\\Database\\Factories\\": "database/factories/",
+            "Modules\\CarLog\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\CarLog\\Tests\\": "tests/"
+        }
+    }
+}
