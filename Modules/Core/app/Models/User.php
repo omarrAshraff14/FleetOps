@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\Concerns\HasUlids;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Modules\CarLog\Models\CarLog;
+use Modules\HR\Models\Timesheet;
+use Modules\Kroky\Models\DamageReport;
+use Modules\Operations\Models\Request;
 use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable

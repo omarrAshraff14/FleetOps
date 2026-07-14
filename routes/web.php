@@ -3,7 +3,8 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware(['tenant'])->group(function () {
-
+Route::post('locale/{locale}', [\App\Http\Controllers\LocaleController::class, 'switch'])
+     ->name('locale.switch');
     Route::get('/', function () {
         return redirect()->route('dashboard');
     });

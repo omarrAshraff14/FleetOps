@@ -6,6 +6,8 @@ namespace Modules\Operations\Models;
 use Modules\Core\Traits\HasTenant;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;
 use Illuminate\Database\Eloquent\Model;
+use Modules\CarLog\Models\CarLog;
+use Modules\Kroky\Models\KrokyVersion;
 
 class CustomerValidation extends Model
 {

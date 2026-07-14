@@ -1,9 +1,13 @@
 <?php
 namespace App\Modules\Maintenance\Models;
 
-use App\Traits\HasTenant;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;
 use Illuminate\Database\Eloquent\Model;
+use Modules\Core\Models\User;
+use Modules\Core\Traits\HasTenant ;
+use Modules\Fleet\Models\Car;
+use Modules\Kroky\Models\KrokyPoint;
+use Modules\Maintenance\Models\RepairOrder;
 
 class RepairReport extends Model
 {

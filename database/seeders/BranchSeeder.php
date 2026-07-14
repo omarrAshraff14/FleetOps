@@ -13,16 +13,17 @@ class BranchSeeder extends Seeder
     {
         $tenant = Tenant::where('domain', 'demo')->first();
 
-        Branch::firstOrCreate(
-            [
-                'tenant_id' => $tenant->id,
-                'name'      => 'الفرع الرئيسي',
-            ],
-            [
-                'address'   => 'القاهرة',
-                'phone'     => '01000000000',
-                'is_active' => true,
-            ]
-        );
+            $branches = [
+            ['name' => 'الفرع الرئيسي',   'address' => 'القاهرة'],
+            ['name' => 'فرع الإسكندرية',  'address' => 'الإسكندرية'],
+            ['name' => 'فرع الجيزة',      'address' => 'الجيزة'],
+        ];
+
+        foreach ($branches as $branch) {
+            Branch::firstOrCreate(
+                ['tenant_id' => $tenant->id, 'name' => $branch['name']],
+                array_merge($branch, ['tenant_id' => $tenant->id, 'phone' => null, 'is_active' => true])
+            );
+        }
     }
 }

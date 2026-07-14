@@ -11,6 +11,7 @@ use Modules\Kroky\Models\DamageReport;
 use  Modules\Core\Models\User;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;
 use Illuminate\Database\Eloquent\Model;
+use Modules\Operations\Models\CustomerValidation;
 
 class CarLog extends Model
 {

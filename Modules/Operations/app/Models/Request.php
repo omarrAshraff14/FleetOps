@@ -7,6 +7,11 @@ use Modules\Core\Traits\HasTenant;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Modules\CarLog\Models\CarLog;
+use Modules\Core\Models\Branch;
+use Modules\Core\Models\User;
+use Modules\Fleet\Models\Car;
+use Modules\HR\Models\Timesheet;
 
 class Request extends Model
 {

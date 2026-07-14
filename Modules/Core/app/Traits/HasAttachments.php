@@ -1,7 +1,7 @@
 <?php
 namespace Modules\Core\Traits;
 
-use App\Modules\Core\Models\Attachment;
+use Modules\Core\Models\Attachment ;
 
 trait HasAttachments
 {
