@@ -1,0 +1,19 @@
+diff --git a/Modules/Fleet/app/Models/CarStatusHistory.php b/Modules/Fleet/app/Models/CarStatusHistory.php
+index f16a9fb..f1d1aee 100644
+--- a/Modules/Fleet/app/Models/CarStatusHistory.php
++++ b/Modules/Fleet/app/Models/CarStatusHistory.php
+@@ -6,6 +6,7 @@
+ use Modules\Core\Traits\HasTenant;
+ use Illuminate\Database\Eloquent\Concerns\HasUlids;
+ use Illuminate\Database\Eloquent\Model;
++use Modules\Core\Models\User;
+ 
+ class CarStatusHistory extends Model
+ {
+@@ -34,4 +35,4 @@ public function changedBy()
+     {
+         return $this->belongsTo(User::class, 'changed_by');
+     }
+-}
+\ No newline at end of file
++}

@@ -6,6 +6,7 @@ namespace Modules\Fleet\Models;
 use Modules\Core\Traits\HasTenant;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;
 use Illuminate\Database\Eloquent\Model;
+use Modules\Core\Models\User;
 
 class CarStatusHistory extends Model
 {
