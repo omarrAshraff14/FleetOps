@@ -6,6 +6,8 @@ namespace Modules\HR\Models;
 use Modules\Core\Traits\HasTenant;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;
 use Illuminate\Database\Eloquent\Model;
+use Modules\Core\Models\Branch;
+use Modules\Core\Models\User;
 
 class Timesheet extends Model
 {

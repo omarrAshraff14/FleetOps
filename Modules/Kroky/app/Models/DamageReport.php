@@ -6,6 +6,11 @@ namespace Modules\Kroky\Models;
 use Modules\Core\Traits\HasTenant;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;
 use Illuminate\Database\Eloquent\Model;
+use Modules\CarLog\Models\CarLog;
+use Modules\Core\Models\User;
+use Modules\Core\Traits\HasAttachments;
+use Modules\Fleet\Models\Car;
+use Modules\Maintenance\Models\RepairOrder;
 
 class DamageReport extends Model
 {

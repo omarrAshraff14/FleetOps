@@ -4,9 +4,15 @@
 namespace Modules\Fleet\Models;
 
 use Modules\Core\Traits\HasTenant;
+use Modules\Core\Models\Branch;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Modules\CarLog\Models\CarLog;
+use Modules\Core\Models\User;
+use Modules\Kroky\Models\KrokyVersion;
+use Modules\Maintenance\Models\RepairOrder;
+use Modules\Operations\Models\Request;
 
 class Car extends Model
 {

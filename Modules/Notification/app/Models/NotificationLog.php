@@ -1,9 +1,9 @@
 <?php
 namespace Modules\Notification\Models;
 
-use App\Traits\HasTenant;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;
 use Illuminate\Database\Eloquent\Model;
+use Modules\Core\Traits\HasTenant;
 
 class NotificationLog extends Model
 {

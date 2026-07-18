@@ -6,6 +6,10 @@ namespace Modules\Core\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;
+use Modules\Fleet\Models\Car;
+use Modules\Notification\Models\NotificationTemplate;
+use Modules\Operations\Models\Customer;
+use Modules\Operations\Models\Request;
 
 class Tenant extends Model
 {

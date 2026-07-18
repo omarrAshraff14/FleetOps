@@ -3,6 +3,7 @@
 
 namespace Modules\Kroky\Models;
 
+use App\Modules\Maintenance\Models\RepairReport;
 use Modules\Core\Traits\HasTenant;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;
 use Illuminate\Database\Eloquent\Model;

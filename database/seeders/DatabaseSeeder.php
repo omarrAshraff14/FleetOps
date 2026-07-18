@@ -27,6 +27,9 @@ class DatabaseSeeder extends Seeder
               TenantSeeder::class,
             BranchSeeder::class,
             UserSeeder::class,
+             RequestTypeSeeder::class,
+            InspectionTemplateSeeder::class,
+             CarSeeder::class,  
         ]);
     }
 }

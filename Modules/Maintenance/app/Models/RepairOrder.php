@@ -3,9 +3,14 @@
 
 namespace Modules\Maintenance\Models;
 
+use App\Modules\Maintenance\Models\RepairReport;
 use Modules\Core\Traits\HasTenant;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;
 use Illuminate\Database\Eloquent\Model;
+use Modules\Core\Models\User;
+use Modules\Fleet\Models\Car;
+use Modules\Kroky\Models\DamageReport;
+use Modules\Kroky\Models\KrokyPoint;
 
 class RepairOrder extends Model
 {

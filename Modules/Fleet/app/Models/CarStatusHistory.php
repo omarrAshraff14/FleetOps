@@ -11,7 +11,7 @@ use Modules\Core\Models\User;
 class CarStatusHistory extends Model
 {
     use HasUlids, HasTenant;
-
+     protected $table = 'car_status_history';
     protected $fillable = [
         'tenant_id',
         'car_id',

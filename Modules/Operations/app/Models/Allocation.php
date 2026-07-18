@@ -4,8 +4,10 @@ namespace Modules\Operations\Models;
 use Modules\Core\Traits\HasTenant;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;
 use Illuminate\Database\Eloquent\Model;
+use Modules\Core\Models\User;
+use Modules\Fleet\Models\Car;
 
-class Allocation extends ModelAssignment
+class Allocation extends Model
 {
     use HasUlids, HasTenant;
 
