@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>FleetOps — @yield('title', 'Dashboard')</title>
 
     @if(app()->getLocale() === 'ar')
@@ -271,7 +272,7 @@
         .flash-success { background: var(--status-ready-bg); border: 1px solid var(--status-ready-c); color: var(--status-ready-c); border-radius: var(--radius-sm); padding: 10px 14px; margin-bottom: 18px; font-size: 13px; display: flex; align-items: center; gap: 8px; }
         .flash-error   { background: var(--status-not-ready-bg); border: 1px solid var(--status-not-ready-c); color: var(--status-not-ready-c); border-radius: var(--radius-sm); padding: 10px 14px; margin-bottom: 18px; font-size: 13px; }
 
-        @stack('styles')
+      
     </style>
     @stack('styles')
 </head>
@@ -405,6 +406,7 @@
         @endif
 
         @yield('content')
+        @include('components.alerts')
     </main>
 </div>
 </div>

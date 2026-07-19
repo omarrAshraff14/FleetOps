@@ -3,7 +3,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Modules\Fleet\Http\Controllers\CarController;
-use Modules\Fleet\Http\Controllers\CarBrandController;
+// use Modules\Fleet\Http\Controllers\CarBrandController;
 
 Route::middleware(['tenant', 'auth'])->prefix('fleet')->name('fleet.')->group(function () {
 Route::post('locale/{locale}', [\App\Http\Controllers\LocaleController::class, 'switch'])
@@ -16,6 +16,6 @@ Route::post('locale/{locale}', [\App\Http\Controllers\LocaleController::class, '
 
     // Brands & Models (للـ Super Admin بس)
     Route::middleware('role:super_admin')->group(function () {
-        Route::resource('brands', CarBrandController::class);
+        // Route::resource('brands', CarBrandController::class);
     });
 });

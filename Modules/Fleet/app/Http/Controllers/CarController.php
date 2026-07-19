@@ -81,7 +81,7 @@ class CarController extends Controller
         $car = $this->carService->create($request->validated());
 
         return redirect()
-            ->route('fleet.cars', $car)
+            ->route('fleet.cars.index', $car)
             ->with('success', 'Car added successfully.');
     }
 
@@ -123,7 +123,7 @@ class CarController extends Controller
         $this->carService->update($car, $request->validated());
 
         return redirect()
-            ->route('fleet.cars', $car)
+            ->route('fleet.cars.index', $car)
             ->with('success', 'Car updated successfully.');
     }
 
@@ -164,6 +164,8 @@ class CarController extends Controller
             isOverride: $isOverride,
         );
 
-        return back()->with('success', 'Car status updated.');
+        return redirect()
+            ->route('fleet.cars.index')
+            ->with('success', 'Car status updated.');
     }
 }
